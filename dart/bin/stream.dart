@@ -8,6 +8,6 @@ Future main() async {
   final data = await file.readAsString();
 
   new StreamServer(uriMapping: {
-    '/': (HttpConnect connect) => connect.response.write(data)
+    '/.*': (HttpConnect connect) => connect.response.write(data)
   }).start(port: 8080);
 }

@@ -16,7 +16,7 @@ class Sink extends RequestSink {
 
   @override
   void setupRouter(Router router) {
-    router.route('/').listen((request) => new Response.ok(data));
+    router.route('*').listen((request) => new Response.ok(data));
   }
 }
 

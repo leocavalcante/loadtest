@@ -8,5 +8,5 @@ Future main() async {
   final data = await file.readAsString();
 
   final server = await start(port: 8080);
-  server.get('/').listen((request) => request.response.send(data));
+  server.get('/.*').listen((request) => request.response.send(data));
 }
