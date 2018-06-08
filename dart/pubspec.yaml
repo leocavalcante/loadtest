@@ -2,6 +2,7 @@ name: loadtest
 
 dependencies:
   aqueduct:
+  jaguar:
   shelf:
   start:
   stream:
