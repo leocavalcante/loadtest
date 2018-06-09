@@ -8,6 +8,34 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.32.1"
+  angel_framework:
+    dependency: "direct main"
+    description:
+      name: angel_framework
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.4+1"
+  angel_http_exception:
+    dependency: transitive
+    description:
+      name: angel_http_exception
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  angel_model:
+    dependency: transitive
+    description:
+      name: angel_model
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  angel_route:
+    dependency: transitive
+    description:
+      name: angel_route
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.6"
   aqueduct:
     dependency: "direct main"
     description:
@@ -36,6 +64,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.3"
+  body_parser:
+    dependency: transitive
+    description:
+      name: body_parser
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -50,6 +85,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
+  code_buffer:
+    dependency: transitive
+    description:
+      name: code_buffer
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   collection:
     dependency: transitive
     description:
@@ -57,6 +99,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.14.9"
+  combinator:
+    dependency: transitive
+    description:
+      name: combinator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  container:
+    dependency: transitive
+    description:
+      name: container
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2"
   convert:
     dependency: transitive
     description:
@@ -155,6 +211,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.1"
+  json_god:
+    dependency: transitive
+    description:
+      name: json_god
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0-beta+1"
   kernel:
     dependency: transitive
     description:
@@ -176,6 +239,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.12.2+1"
+  merge_map:
+    dependency: transitive
+    description:
+      name: merge_map
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   meta:
     dependency: transitive
     description:
@@ -267,6 +337,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.4.1"
+  quiver_hashcode:
+    dependency: transitive
+    description:
+      name: quiver_hashcode
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  random_string:
+    dependency: transitive
+    description:
+      name: random_string
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.1"
   rikulo_commons:
     dependency: transitive
     description:
@@ -379,6 +463,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.12.39"
+  tuple:
+    dependency: transitive
+    description:
+      name: tuple
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
   typed_data:
     dependency: transitive
     description:

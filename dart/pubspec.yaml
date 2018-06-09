@@ -1,6 +1,7 @@
 name: loadtest
 
 dependencies:
+  angel_framework:
   aqueduct:
   jaguar:
   shelf:
