@@ -2,15 +2,14 @@ import 'dart:io';
 import 'dart:isolate';
 
 void _serve(_) {
-  final payloadFile = new File('mockdata.json');
-  final payload = payloadFile.readAsStringSync();
+  final data = new File('mockdata.json').readAsBytesSync();
 
   HttpServer
       .bind(InternetAddress.loopbackIPv4, 8080, shared: true)
       .then((server) {
     server.listen((request) {
       request.response
-        ..write(payload)
+        ..add(data)
         ..close();
     });
   });
