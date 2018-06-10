@@ -1,15 +1,13 @@
 import 'dart:io';
 import 'dart:isolate';
-import 'dart:convert';
+
 import 'package:jaguar/jaguar.dart';
 
 serve(_) async {
-  final payloadFile = new File('mockdata.json');
-  final payload = await payloadFile.readAsString();
-  final bytes = utf8.encode(payload);
-
+  final data = await new File('mockdata.json').readAsBytes();
   final server = new Jaguar(port: 8080, multiThread: true);
-  server.get('*', (ctx) => ctx.response = new ByteResponse(bytes));
+
+  server.get('*', (ctx) => ctx.response = new ByteResponse(data));
   server.serve();
 }
 
