@@ -10,17 +10,17 @@ class Sink extends RequestSink {
 
   @override
   Future willOpen() async {
-    final file = new File('mockdata.json');
-    data = await file.readAsString();
+    data = await new File('mockdata.json').readAsString();
   }
 
   @override
   void setupRouter(Router router) {
-    router.route('*').listen((request) => new Response.ok(data));
+    router.route('*').listen(
+        (request) => new Response(200, {'Content-Type': 'text/plain'}, data));
   }
 }
 
-Future main() async {
+main() {
   final app = new Application<Sink>()..configuration.port = 8080;
-  await app.start(numberOfInstances: Platform.numberOfProcessors);
+  app.start(numberOfInstances: Platform.numberOfProcessors);
 }
