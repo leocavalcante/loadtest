@@ -1,12 +1,10 @@
 import 'dart:io';
 import 'dart:isolate';
 
-void _serve(_) {
+_serve(_) {
   final data = new File('mockdata.json').readAsBytesSync();
 
-  HttpServer
-      .bind(InternetAddress.loopbackIPv4, 8080, shared: true)
-      .then((server) {
+  HttpServer.bind('0.0.0.0', 8080, shared: true).then((server) {
     server.listen((request) {
       request.response
         ..add(data)
@@ -15,7 +13,7 @@ void _serve(_) {
   });
 }
 
-void main(List<String> args) {
+main(List<String> args) {
   final port = new ReceivePort();
 
   port.listen((e) {
